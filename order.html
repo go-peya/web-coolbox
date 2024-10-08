@@ -109,13 +109,66 @@
 
     </nav>
 
-    <section class="home">
-        <div class="text">Banner Nueva Orden</div>
-
-    
-      <div class="content-configure">
- 
-      </div>
+    <section class="home">  
+        <main class="main-content">
+            
+            <div class="content-box">
+                <h2 class="heading">Datos</h2>
+              <div class="grid">
+                <div>
+                  <label for="order-number">N° de pedido</label>
+                  <input type="text" id="order-number" value="1170358281" readonly>
+                </div>
+                <div>
+                  <label for="customer-name">Nombre</label>
+                  <input type="text" id="customer-name" placeholder="Opcional ...">
+                </div>
+                <div>
+                  <label for="order-date">Fecha</label>
+                  <input type="text" id="order-date" value="29/05/2024" readonly>
+                </div>
+              </div>
+          
+              <h3 class="sub-heading">Artículos</h3>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Imagen</th>
+                    <th>Nombre</th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>
+                    <th>Total</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody id="order-items">
+                  <!-- Los artículos se generan con JS -->
+                </tbody>
+              </table>
+          
+              <h3 class="sub-heading">Resumen de la Venta</h3>
+              <div class="summary">
+                <div class="summary-item">
+                  <span>Subtotal</span>
+                  <span id="subtotal">S/.0.00</span>
+                </div>
+                <div class="summary-item">
+                  <span>Descuento</span>
+                  <span id="discount">-S/.58.00</span>
+                </div>
+                <div class="summary-item total">
+                  <span>Total</span>
+                  <span id="total">S/.0.00</span>
+                </div>
+              </div>
+          
+              <div class="actions">
+                <button class="btn btn-cancel">Cancelar</button>
+                <button class="btn btn-save">Guardar</button>
+              </div>
+            </div>
+          </main>
+          
   
 
     </section>
