@@ -311,7 +311,7 @@ body.dark .home .text{
 .content-home {
     position: relative;
     width: 0 auto;
-    padding: 20px;
+    padding: 5px 20px 5px 20px;
     margin: 20px; /* Ajusta este margen según el ancho de tu sidebar */
     display: flex; /* Usa flexbox para controlar el tamaño */
     flex-direction: row; /* Ordena los gráficos horizontalmente */
@@ -329,6 +329,9 @@ body.dark .home .text{
     min-width: 45%; /* Define un ancho mínimo para los gráficos */
     color: var(--text-color);
   }
+
+
+
 
   /* Nueva Orden - New Order*/
   .main-content {
@@ -418,3 +421,58 @@ body.dark .home .text{
     border: 1px solid;  
 }  
   
+.table-section {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    
+  }
+  
+  .table th, .table td {
+    padding: 12px;
+    border-bottom: 1px solid #e2e8f0;
+    text-align: left;
+  }
+  
+  .table td span {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.9em;
+  }
+  
+  .status-entregado {
+    background-color: #b4ffdb;
+    color: #25aa5a;
+  }
+  
+  .status-pendiente {
+    background-color: #ffff99;
+    color: #f1b356;
+  }
+  
+  .status-cancelado {
+    background-color: #ffcccc;
+    color: #ff6464;
+  }
+  
+  .dropdown-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 6px 12px;
+    font-weight: bold;
+  }
