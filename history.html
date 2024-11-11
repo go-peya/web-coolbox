@@ -110,12 +110,27 @@
     </nav>
 
     <section class="home">
-        <div class="text">Banner history</div>
-
+        <div class="table-section">
+            <div class="table-header">
+              <h2>Pedidos Recientes</h2>
+              <button class="dropdown-btn">All Time</button>
+            </div>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Pedido</th>
+                  <th>Cliente</th>
+                  <th>Canal</th>
+                  <th>Total</th>
+                  <th>Estado</th>
+                </tr>
+              </thead>
+              <tbody id="order-table-body">
+                <!-- Orders will be dynamically inserted here -->
+              </tbody>
+            </table>
+          </div>
     
-      <div class="content-configure">
- 
-      </div>
   
 
     </section>
